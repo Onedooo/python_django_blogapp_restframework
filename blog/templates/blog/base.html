@@ -21,6 +21,9 @@
                 </small>
             </p>
         {% else %}
+            <a href="{% url 'register_user' %}" class="top-menu"> 
+                <span class="glyphicon glyphicon-check"></span>
+            </a>
             <a href="{% url 'login' %}?next={{request.path}}" class="top-menu">
                 <span class="glyphicon glyphicon-lock"></span>
             </a>
